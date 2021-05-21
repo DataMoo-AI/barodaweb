@@ -1,0 +1,21 @@
+version: "2.0"
+
+rules:
+
+- rule: internship
+  steps:
+    - intent: intern
+    - action: utter_intern
+    - action: intern_details_form
+    - active_loop: intern_details_form
+
+- rule: create enquiry detail
+  condition:
+    - active_loop: intern_details_form
+  steps:
+    - action: intern_details_form
+    - active_loop: null
+    - slot_was_set:
+      - requested_slot: null
+    - action: action_intern_create_form
+    - action: utter_response

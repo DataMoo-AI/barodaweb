@@ -1,0 +1,324 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: ok
+  examples: |
+    - ok
+    - okay
+    - i'm ok
+    - ok with details
+    - ok enough
+    - okay have got the details.
+
+- intent: about_us
+  examples: |
+    - about us
+    - tell me about your company
+    - about your company
+    - about yourself
+    - about company
+
+- intent: whybaroda
+  examples: |
+    - Why Barodaweb?
+    - what is the special in Barodaweb?
+    - why select Barodaweb?
+    - Barodaweb why?
+    - what is different in Barodaweb?
+    - why to choose Barodaweb?
+
+- intent: vision
+  examples: |
+    - vision mision and values of your company
+    - vision mission and values
+    - what are the vision mision and values of your company?
+    - vision and mission
+    - vision mission values
+
+
+- intent: infra
+  examples: |
+    - infrastructure
+    - infrastructure of your company
+    - company infrastructure
+    - infrastructure details
+
+- intent: global
+  examples: |
+    - global presence
+    - global presence of your company
+    - company global presence
+    - where are you company located in this global?
+    - global presence details
+
+- intent: character
+  examples: |
+    - characteristics
+    - characteristics of your company
+    - what are the characteristics of your company?
+    - company characteristics
+
+- intent: team
+  examples: |
+    - The Team & Sill Set
+    - team and skill of your company
+    - team and skill details
+    - companys team and skills
+    - what are the skills and teams in your company?
+
+- intent: testimonials
+  examples: |
+    - testimonials
+    - companys testimonials
+    - testimonial details
+    - what are the testimonials of your company?
+    - testimonials of your company
+
+- intent: awards
+  examples: |
+    - Awards and Certifications
+    - Awards and Certifications of your company
+    - companys Awards and Certifications
+    - Awards and Certifications details
+    - what are the Awards and Certifications you got?
+
+- intent: services
+  examples: |
+    - service offered
+    - what are the service provided?
+    - service provided
+    - types of services
+    - what are the service offered?
+
+- intent: it
+  examples: |
+    - IT consulatancy
+    - IT consulatancy details
+    - What IT consulatancy offers?
+    - What IT consulatancy provides?
+  
+- intent: industry
+  examples: | 
+    - Industry Partnership
+    - Industry Partnership details 
+    - how to make Industry Partnership?
+    - Industry Partnership procedure
+    - Industry Partnership form
+
+- intent: staffing
+  examples: | 
+    - Staffing & outsoucring
+    - how to do Staffing & outsoucring?
+    - Staffing & outsoucring details
+    - Staffing & outsoucring procedure
+
+
+- intent: business
+  examples: | 
+    - business presence
+    - how business presence helps?
+    - business presence details
+    - what business presence offer?
+    - how to do business presence?
+
+- intent: intelligence
+  examples: | 
+    - Business intelligence
+    - Business intelligence details
+    - what Business intelligence offers?
+    - how to have Business intelligence?
+    - Business intelligence offers
+
+- intent: digital
+  examples: | 
+    - digital marketing
+    - digital marketing details
+    - what digital marketing provides?
+    - how to do digital marketing?
+    - what digital marketing offers?
+
+- intent: mob
+  examples: | 
+    - mobile application
+    - mobile application details
+    - why mobile application?
+    - what mobile application offers?
+    - what will we have in  mobile application?
+
+- intent: web
+  examples: | 
+    - web development
+    - web development details
+    - what web development offers?
+    - what will we have in web development?
+
+
+- intent: corporate
+  examples: | 
+    - corporate branding
+    - how corporate branding useful?
+    - corporate branding details
+    - why corporate branding?
+    - what corporate branding offers?
+    - benefits of corporate branding
+
+- intent: contact
+  examples: | 
+    - contact details
+    - contact
+    - contact us
+    - how to contact you?
+
+- intent: intern
+  examples: | 
+    - internship
+    - internship details
+    - do you provide any internship program?
+    - internship offered
+    - any internship program offered?
+
+- intent: name
+  examples: |
+    - my name is [mathu]{"entity":"name","value":"mathu"}
+    - my name is [vaishu]{"entity":"name","value":"vaishu"}
+    - [mathu]{"entity":"name","value":"mathu"}
+    - [vaishu]{"entity":"name","value":"vaishu"}
+    - [kavin]{"entity":"name","value":"kavin"}
+    - my name is [Raja]{"entity":"name"}
+
+
+- intent: mobile_number
+  examples: |
+    - my number is [8209829808]{"entity":"mobile"}
+    - [8209829808]{"entity":"mobile"}
+    - [8209829808]{"entity":"mobile"} is my number
+    - my mobile number is [8209829808]{"entity":"mobile"}
+    - phone number is [8833244455]{"entity":"mobile"}
+
+- intent: mail_id
+  examples: |
+    - my mail id is [vaish@gmail.com]{"entity":"email"}
+    - [sakti@gmail.com]{"entity":"email"}
+    - [vaish@gmal.com]{"entity":"email"} is my email
+    - my mail is [aarush@gmail.com]{"entity":"email"}
+    - [s@gmail.com]{"entity":"email"}
+    - [sugan@ymail.com]{"entity":"email"}
+    - [gopal@ymail.com]{"entity":"email"}
+
+- intent: college_name
+  examples: |
+    - my college name is [MIT]{"entity":"colname"}
+    - my college name is [PSG]{"entity":"colname"}
+    - [CEG]{"entity":"colname"}
+    - [VIT]{"entity":"colname"}
+    - [MIT]{"entity":"colname"}
+    - college name is [loyola]{"entity":"colname"}
+    - my college name is [saveetha]{"entity":"colname"}
+    - college name is [ponjesly]{"entity":"colname"}
+
+- intent: career
+  examples: |
+    - career details
+    - career
+    - any career information
+    - career information
+    - career elgiblity
+    
+
+
+
+
+
+
+
+

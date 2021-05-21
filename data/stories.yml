@@ -1,0 +1,159 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: about_us
+  - action: utter_aboutus
+  - action: utter_response
+
+- story: affirm path
+  steps:
+  - intent: affirm
+  - action: utter_affirm
+
+- story: denial 
+  steps:
+  - intent: deny
+  - action: utter_thanks
+
+- story: vision path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: vision
+  - action: utter_vision
+  - action: utter_response
+
+
+- story: infrastructure path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: infra
+  - action: utter_infra
+  - action: utter_response
+
+
+- story: global path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: global
+  - action: utter_global
+  - action: utter_response
+
+
+- story: charachterstic path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: character
+  - action: utter_character
+  - action: utter_response
+
+- story: team path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: team
+  - action: utter_team
+  - action: utter_response
+
+- story: testimonials path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: testimonials
+  - action: utter_testimonials
+  - action: utter_response
+
+- story: awards path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: awards
+  - action: utter_awards
+  - action: utter_response
+
+- story: whybaroda path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: whybaroda
+  - action: utter_whybaroda
+  - action: utter_response
+
+- story: service path
+  steps:
+  - intent: services
+  - action: utter_services
+
+- story: it path
+  steps:
+  - intent: it
+  - action: utter_it
+  - action: utter_ok
+
+- story: industry path
+  steps:
+  - intent: industry
+  - action: utter_industry
+  - action: utter_ok
+
+- story: staffing path
+  steps:
+  - intent: staffing
+  - action: utter_staffing
+  - action: utter_ok
+
+- story: business path
+  steps:
+  - intent: business
+  - action: utter_business
+  - action: utter_ok
+
+- story: intelligence path
+  steps:
+  - intent: intelligence
+  - action: utter_intelligence
+  - action: utter_ok
+
+- story: mobpath
+  steps:
+  - intent: mob
+  - action: utter_mob
+  - action: utter_ok
+  
+- story: web path
+  steps:
+  - intent: web
+  - action: utter_webdevelop
+  - action: utter_ok
+
+- story: corporate path
+  steps:
+  - intent: corporate
+  - action: utter_corporate
+  - action: utter_ok
+
+- story: contact path
+  steps:
+  - intent: contact
+  - action: utter_contact
+
+- story: ok path
+  steps:
+  - intent: ok
+  - action: utter_okay
+
+- story: career path
+  steps:
+  - intent: career
+  - action: utter_career
+  
+
+

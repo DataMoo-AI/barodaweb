@@ -1,0 +1,384 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - about_us
+  - vision
+  - whybaroda
+  - infra
+  - character
+  - team
+  - testimonials
+  - awards
+  - global
+  - services
+  - it
+  - industry
+  - staffing
+  - business
+  - intelligence
+  - digital
+  - mob
+  - web
+  - corporate
+  - contact
+  - intern
+  - name
+  - mobile_number
+  - mail_id
+  - college_name
+  - ok
+  - career
+
+entities:
+  - email
+  - mobile
+  - colname
+
+slots:
+  name:
+    type: text
+  mobile:
+    type: text
+  email:
+    type: text
+  colname:
+    type: text
+
+responses:
+  utter_greet:
+  - text: "Hi,Welcome To Barodaweb: The E-Catalogue Designer.
+      I am your digital assitant.\n
+      I can help you in below"
+    buttons:
+      - title: About us
+        payload: about_us
+      - title: Vision-Misson-Value
+        payload: vision
+      - title: Why Barodaweb?
+        payload: whybaroda
+      - title: Infrastructure
+        payload: infra
+      - title: Global presence
+        payload: global
+      - title: Characteristics
+        payload: character
+      - title: The Team & SKill Set
+        payload: team
+      - title: Testimonials
+        payload: testimonials
+      - title: Awards and Certifications
+        payload: awards
+
+  utter_response:
+  - text: "Do you want any other information ?"
+
+  utter_affirm:
+  - text: "what would you like to have ?"
+    buttons:
+      - title: About us
+        payload: about_us
+      - title: Vision-Misson-Value
+        payload: vision
+      - title: Why Barodaweb?
+        payload: whybaroda
+      - title: Infrastructure
+        payload: infra
+      - title: Global presence
+        payload: global
+      - title: Characteristics
+        payload: character
+      - title: The Team & Skill Set
+        payload: team
+      - title: Testimonials
+        payload: testimonials
+      - title: Awards and Certifications
+        payload: awards
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_aboutus:
+  - text: "Barodaweb since 1995 is an end-to-end IT outsourcing service provider. With proven capabilities and deep domain expertise, we address your business
+          challenges through our integrated IT and business process outsourcing solutions that address critical business functions."
+  utter_vision:
+  - text: "Vision: The Brand You Can Trust \n
+            Mission: We aim to build a team that will make us emerge higher by developing quality and customized solutions for our clients.\n
+            Values: Our values are commitment, Innovation,community,Excellence,Customers comes first and Sincerity"
+
+  utter_whybaroda:
+  - text: "We aim to offer complete end-to-end system services at an affordable price that is high on 
+          quality to our clients by demystifying technology. We boost a sophisticated infrastructure, 
+          which enables us to provide timely services that are tailored according to clients’ needs and requirements.\n
+          We have delivered a number of E-Commerce, web design and development, web promotion, and hosting solutions– at present, they are above 1000+"
+  utter_infra:
+  - text: "Our project management portal helps the entire organization in managing and maintaining day-to-day activities with a transparent view of projects, their progress, and stage-wise status.\n
+          We are proud to use legal/ License software’s only in the development process.\n
+          We include web designers, web developers, software developers, graphic designers, and network/connectivity solution providers"
+ 
+  utter_character:
+  - text: "One-stop IT solution,high-quality outcomes,Experienced IT Professionals,strong IT strategy,Understand Clients Requirements,Accomplish Clients Trust"
+ 
+  utter_team:
+  - text: "Barodaweb is backed by a team of committed, experienced and qualified professionals. The team is the firm's biggest asset. Unlike Industry standards, Barodaweb has a retention rate of 99% for its employees which in turn implies very high ownership standards.
+          To know more about team and skill read the link https://www.barodaweb.com/The_Team_and_Skill_Sets.html"
+  
+  utter_testimonials:
+  - text: "The testimonials are given in the link https://www.barodaweb.com/Testimonials.html"
+
+  utter_awards:
+  - text: "The awards and certification are given below"
+    image: "https://www.barodaweb.com/images/certifications/1a.jpg"
+
+  utter_global:
+  - text: "The global presence of barodaweb is given below" 
+    image: "https://www.barodaweb.com/images/world_map.jpg"
+
+  utter_services:
+  - text: "The services offered are:"
+    buttons:
+      - title: Web development
+        payload: web
+      - title: Corporate branding
+        payload: corporate
+      - title: Mobile application
+        payload: mob
+      - title: Business presence
+        payload: business
+      - title: Digital marketing
+        payload: digital
+      - title: Business intelligence
+        payload: intelligence
+      - title: IT consulatancy
+        payload: it
+      - title: Industry Partnership
+        payload: industry
+      - title: Staffing & outsoucring
+        payload: staffing
+
+  utter_okay:
+  - text: "The services offered are:"
+    buttons:
+      - title: Web development
+        payload: web
+      - title: Corporate branding
+        payload: corporate
+      - title: Mobile application
+        payload: mob
+      - title: Business presence
+        payload: business
+      - title: Digital marketing
+        payload: digital
+      - title: Business intelligence
+        payload: intelligence
+      - title: IT consulatancy
+        payload: it
+      - title: Industry Partnership
+        payload: industry
+      - title: Staffing & outsoucring
+        payload: staffing
+
+  utter_webdevelop:
+    - text: "Well-conceived and planned web sites are an integral part of every organization's communication needs. Offering an attractive, intuitive interface with a logical and easy to use navigation layout will make the difference between a happy visitor (and potential client) and a frustrated web surfer at your website."
+      custom:
+        payload: "collapsible"
+        data:
+          - title: Customised web application
+            description: "Barodaweb stands out in providing software development services by not just acting as an outside vendor but also providing effective consultancy services."
+          - title: ecommerce development
+            description: "Our eCommerce designers and developers know the eCommerce world inside out and can provide the right solution to every business. Barodaweb integrates the e-commerce site to work seamlessly with your bank and the customer's credit card; ensuring minimal effort for both your customers and you.
+                          To know more https://www.barodaweb.com/E-commerce_Development.html"
+          - title: Web based software development
+            description: "Barodaweb helps you come up with the strategy to develop & implement your custom web-based software development. There are many pieces to the puzzle and we have the array of experience to put them all together for you.
+                          To know more https://www.barodaweb.com/Web_Based_Software_Development.html"
+          - title: Dynamic website Development
+            description: "Dynamic websites are for those who want to change their website contents frequently but without technical knowledge, it is not possible to change the website substance.
+                          To know more https://www.barodaweb.com/Dynamic_Website_Development.html"
+          - title: Static website development
+            description: "Barodaweb provides static website designing services that are appealing and creative, also designed professionally and effectively. It can draw the visitor’s attention, thus we persistently strive to deliver unique, secure, efficient, and consistent designs to enhance your presence on the web.
+                          To know more https://www.barodaweb.com/Static_website_Development.html"
+
+  utter_corporate: 
+    - text: "Our corporate branding solutions BUILD A UNIQUE IDENTITY FOR YOUR BRAND so that you can enjoy a premium edge over the competition."
+      custom:
+        payload: "collapsible"
+        data:
+          - title: Logo & Stationery
+            description: "We design custom logos, which are personalized depending on the changing trends and design symbols that communicate a unique message while promoting the authenticity of the company in a more interactive manner. It is our policy to keep the budget of the clients outsourcing to us in mind when designing
+                          To know more https://www.barodaweb.com/Logo_and_Stationery.html"
+          - title: Brochure
+            description: "Our team is always on the try to create innovative designs for your brochures. Since they are highly imaginative, they try to create new ideas that can carry in freshness in your corporate brochure.
+                          To know more https://www.barodaweb.com/Brochure.html"
+          - title: Visiting Cards
+            description: "The best way for a new company to attract attention from future clients and customers is to create an attractive business card."
+          - title: Product Packaging
+            description: "Our packaging designs confirm that key messages and benefits are visible across the correct plane of package design and that the design positioning is right for your product's success, after all, you spent a huge amount of work getting your product right and we aim to do it justice
+                          To know more https://www.barodaweb.com/Product_Packaging.html"
+          - title: Flyer Design
+            description: "Our unique and hassle-free flyer design services will help you to take the promotion of your products or ventures to new heights effortlessly.
+                          To know more https://www.barodaweb.com/Flyer_Design.html"
+          - title: Corporate & Product design
+            description: "We offer a professionally created company profile that will always create the desired impression and achieve your targets, beyond expectations.
+                          To know more follow https://www.barodaweb.com/Corporate_and_Product_Presentation.html"
+          
+  utter_mob: 
+    - text: "At Barodaweb we have trained app developers who have hands-on experience in developing mobile apps for all kinds of platforms, including Android and iOS. We help design, develop, test, and integrate apps for our clients across multiple platforms that integrate well with web services"
+      custom:
+        payload: "collapsible"
+        data:
+          - title: Android app application
+            description: "At Barodaweb , we have a dynamic team of software engineers and developers that will work to provide you with simple yet effective Android Applications.
+                          To know more follow https://www.barodaweb.com/Android.html"
+          - title: iOS app application
+            description: "Our quality-focused work procedures make sure you get the finest return on your investment in iPhone app development with us.
+                          To know more https://www.barodaweb.com/IOS.html"
+
+  utter_business: 
+    - text: "Business presence offers"
+      custom:
+        payload: "collapsible"
+        data:
+          - title: Domain Registration 
+            description: "Barodaweb, grounded in Vadodara, Gujarat, India, offers cheap Domain Name Registration and Hosting Services to help you register your domain in minutes and use it within 24 hours of its formation.
+                          At Barodaweb, we provide our clients fast and effective domain name registration services 
+                          that help them to expand their online business without compromising on expectations.follow link https://www.barodaweb.com/Domain_Registration.html to know more"
+          - title: Web hosting  
+            description: "We utilize the highest quality technology to ensure your website is available 24 hours a day, 7 days a week. Servers are tuned to a high degree, resulting in lightning-fast performance, and quick loading times for all sites.
+                        To know more about features https://www.barodaweb.com/Web_Hosting.html"
+          - title: Email hosting
+            description: "At Barodaweb we provide reliable dedicated email services from
+                        Data Center | Google Business Email | Rediff mail | Microsoft office 365
+                        To know more follow https://www.barodaweb.com/Email_Hosting.html"
+          - title: SSL Certification
+            description: "Barodaweb provides you the service of SSL Certification. SSL Certificates are small data files that digitally bind a cryptographic key to an organization’s details
+                          To know more follow link https://www.barodaweb.com/SSL_Certification.html"
+          - title: Cloud hosting
+            description: "To know about cloud hosting read https://www.barodaweb.com/Cloud_Hosting.html"
+
+  utter_digital: 
+    - text: "We can help you develop a digital marketing strategy that helps create easy to find, engaging experiences that inspire action – from joining your social network community to buying your product to referring your brand to peers and social networks."
+      custom:
+        payload: "collapsible"
+        data:
+          - title: social media marketing
+            description: "An effective social media marketing approach helps businesses make positive perceptions in the minds of consumers and help brands have augmented brand equity."
+          - title: Email & whatsapp marketing
+            description: "An effective Email & whatsapp marketing approach helps businesses make positive perceptions in the minds of consumers and help brands have augmented brand equity"
+          - title: Search Engine Optimization
+            description: "Barodaweb has a team of SEO who work relentlessly in creating keywords specifically for your type of business. These keywords will ensure that your business always looks on top of the search engine list. The keywords need to be updated from time to time and our team also takes care of that"
+          - title: PPC-pay per click
+            description: "Our team of PPC experts helps you manage the entire process with our proven and tested methodology from the huge experience we have in this field. We guide you through selecting a relevant conversion based initial set of keywords to kick start the PPC campaign"
+          - title: GoogleAdwords
+            description: "AdWords at the top ads that seem under the heading 'Sponsored Links' found on the right-hand side or above Google search results. If your AdWords ad is clicked on, Google search users are then directed to your website"
+
+  utter_intelligence: 
+    - text: "Our BI services help organizations optimize their capabilities to leverage various types of data and make it into something the business can use to make better and more informed choices. We work closely with clients to assess their goals and challenges to ensure we deliver the most appropriate solution to meet their needs and provide a competitive advantage"
+      custom:
+        payload: "collapsible"
+        data:
+          - title: AI development
+            description: "Our AI development team will help you identify the areas that can benefit from artificial intelligence solutions and implement them to make sure you get the profits you want.
+                         To know more benfits refer the following link https://www.barodaweb.com/AI_Development.html"
+          - title: IOT development
+            description: "Barodaweb offers technologically advanced Internet of Things (IoT) solutions and applications, allowing your business to get supreme benefits of IoT technology.
+                          To know the different IOT Services, solutions and application do follow https://www.barodaweb.com/IOT_Development.html"
+          - title: Machine Learning
+            description: "To know about Machine Learning used follow the link mentioned https://www.barodaweb.com/Machine_Learning.html"
+  
+  utter_it: 
+    - text: "IT consulting services are an integral part of consulting. The objective of seeking IT consulting services is to stay updated and competitive in the marketplace as per the latest technology trends"
+      custom:
+        payload: "collapsible"
+        data:
+          - title: IT consulatancy
+            description: "Technology Consulting has been structured according to our clients in such a way that it allows us to provide end-to-end services across all the major industries, right from the strategy to effectively deliver solutions."
+          - title: Web audit
+            description: "We will improve your website’s user experience (UX) in a matter of days by identifying website problems and providing you with actionable recommendations. To conduct our analysis, we will test with real users, use quantitative and qualitative research, and apply over 20 years of experience."
+  
+  utter_industry:
+  - text: "To make industry Partnership follow link https://www.barodaweb.com/Industry_Partnership.html"
+  
+  utter_staffing:
+  - text: "To do Staffing and Outsourcing follow https://www.barodaweb.com/Staffing_and_Outsourcing.html"
+
+  utter_thanks:
+  - text: "Ok.Thank you"
+
+  utter_ok: 
+  - text: "Type OK to know more about service details.If not type No"
+  
+  utter_contact: 
+  - text: "Address:305-Darpan Apartment, Next to Express Hotel, Alkapuri, Vadodara - 390 005 Gujarat, India.
+                Mobile No:+ 91 9824091021 mail at:sales[at]barodaweb[dot]com"
+
+  utter_career: 
+    - text: "Current Job Openings : We have requirements of professionals with various skills. If your profile match any of our requirements, send your resume to : sales@barodaweb.com
+          The eligiblity details are given below"
+      custom:
+        payload: "collapsible"
+        data:
+          - title: Business Development Executive
+            description: "Qualification: MBA in Marketing.\n Experience: 0-2 years"
+          - title: Web Designer
+            description: "Qualification: Any Graduate.\nExperience: 2 years experience in Graphic designing, Fresher may apply as trainee"
+          - title: Web Developer
+            description: "Qualification: B.E Computer, MCA, BCA, B.Tech, M.Tech.\n Experience: 2 Year Experience in Web Developing. Fresher may as trainee"
+          - title: Receptionist
+            description: "Qualification: 12 Pass, Any Graduates.\n Experience: Fresher"
+          - title: Content Writter
+            description: "Qualification: Master of Arts - With English.\n Experience: 2+ years"
+
+  utter_intern:
+  - text: "We provide internship to engineering final year students of CSE / ISE / MSc IT/ BCA.
+          Internship acknowledgement letters will be provided to CSE / ISE / MSc IT/ BCA students to get permissions from college. 
+          Once internship is completed , a standard certificate will be provided accordingly."
+
+  utter_ask_name:
+  - text: "Please provide your name"
+
+  utter_ask_email:
+  - text: "Enter your email address"
+
+  utter_ask_mobile:
+  - text: "Enter your mobile number"
+
+  utter_ask_colname:
+  - text: "Enter your college name"
+
+forms:
+  intern_details_form:
+    name:
+    - type: from_text
+    email:
+    - type: from_entity
+      entity: email
+    mobile:
+    - type: from_text
+    colname:
+    - type: from_text
+    
+actions:
+  - action_intern_create_form
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
