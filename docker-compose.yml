@@ -1,0 +1,28 @@
+version: '3.0'
+services:
+  rasa:
+    image: rasa/rasa:2.2.2-full
+    ports:
+      - 5005:5005
+    volumes:
+      - ./:/app
+    command:
+      - run
+      - -m
+      - models
+      - --endpoints
+      - endpoints.yml
+      - --enable-api
+      - --cors
+      - "*"
+      - --debug
+  app:
+    # image: rahulrr/rasa_chat:rasa_action_2.0.2
+    # image: rasa/rasa_sdk:2.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./actions:/app/actions
+    ports:
+      - 5055:5055
