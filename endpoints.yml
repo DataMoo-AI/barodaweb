@@ -24,7 +24,14 @@ action_endpoint:
 #    db: <number of your database within redis, e.g. 0>
 #    password: <password used for authentication>
 #    use_ssl: <whether or not the communication is encrypted, default false>
-
+#tracker_store:
+#    type: dynamo
+#    table_name: bot-bw1
+#    region: ap-south-1
+tracker_store:
+    type: mongod
+    url: mongodb://localhost:27017
+    db: rasa
 #tracker_store:
 #    type: mongod
 #    url: <url to your mongo instance, e.g. mongodb://localhost:27017>

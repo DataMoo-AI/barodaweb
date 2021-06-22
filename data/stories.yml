@@ -91,6 +91,7 @@ stories:
   steps:
   - intent: services
   - action: utter_services
+  - action: utter_ok
 
 - story: it path
   steps:
@@ -114,7 +115,7 @@ stories:
   steps:
   - intent: business
   - action: utter_business
-  - action: utter_ok
+  - action: utter_did_that_help
 
 - story: intelligence path
   steps:
@@ -132,7 +133,7 @@ stories:
   steps:
   - intent: web
   - action: utter_webdevelop
-  - action: utter_ok
+  - action: utter_did_that_help
 
 - story: corporate path
   steps:
